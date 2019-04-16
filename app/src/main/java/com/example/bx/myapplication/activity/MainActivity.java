@@ -21,31 +21,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends BaseActivity {
-
     private RadioGroup rg;
     private ViewPager vp;
     private void assignViews() {
         rg = (RadioGroup) findViewById(R.id.rg);
         vp = (ViewPager) findViewById(R.id.vp);
     }
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //用来设置整体下移，状态栏沉浸
+        //
         StatusBarUtil.getStatusBarHeight(MainActivity.this);
         StatusBarUtil.setRootViewFitsSystemWindows(this, false);
         StatusBarUtil.setTranslucentStatus(MainActivity.this);//透明状态栏
         StatusBarUtil.setStatusBarColor(MainActivity.this, Color.parseColor("#00AEFF"));//设置背景颜色
-
         assignViews();
         initData();
-
-
     }
     private void initData() {
         final List<Fragment> fragments = new ArrayList<>();
