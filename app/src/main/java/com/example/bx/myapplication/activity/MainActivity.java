@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity {
         StatusBarUtil.setRootViewFitsSystemWindows(this, false);
 //        StatusBarUtil.setTranslucentStatus(MainActivity.this);//透明状态栏
 
-        StatusBarUtil.setStatusBarColor(MainActivity.this, Color.parseColor("#00AEFF"));//设置背景颜色
+        StatusBarUtil.setStatusBarColor(MainActivity.this, Color.parseColor("#ffffff"));//设置背景颜色
         assignViews();
         initData();
     }
