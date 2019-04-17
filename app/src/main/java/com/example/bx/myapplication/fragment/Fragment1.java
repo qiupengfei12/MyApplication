@@ -34,7 +34,7 @@ public class Fragment1 extends BaseFragment {
         return R.layout.fm_layout1;
     }
 
-    //
+    //123
     //控件的部署
     @Override
     protected void init(View view, Bundle savedInstanceState) {
