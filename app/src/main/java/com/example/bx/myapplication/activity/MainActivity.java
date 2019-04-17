@@ -2,14 +2,12 @@ package com.example.bx.myapplication.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.widget.RadioGroup;
 
 import com.example.bx.myapplication.BaseActivity;
-
 import com.example.bx.myapplication.R;
 import com.example.bx.myapplication.fragment.Fragment1;
 import com.example.bx.myapplication.fragment.Fragment2;
@@ -17,6 +15,7 @@ import com.example.bx.myapplication.fragment.Fragment3;
 import com.example.bx.myapplication.fragment.Fragment4;
 import com.example.bx.myapplication.fragment.Fragment5;
 import com.example.bx.myapplication.utils.StatusBarUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,10 +31,10 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //用来设置整体下移，状态栏沉浸
-        //
         StatusBarUtil.getStatusBarHeight(MainActivity.this);
         StatusBarUtil.setRootViewFitsSystemWindows(this, false);
-        StatusBarUtil.setTranslucentStatus(MainActivity.this);//透明状态栏
+//        StatusBarUtil.setTranslucentStatus(MainActivity.this);//透明状态栏
+
         StatusBarUtil.setStatusBarColor(MainActivity.this, Color.parseColor("#00AEFF"));//设置背景颜色
         assignViews();
         initData();

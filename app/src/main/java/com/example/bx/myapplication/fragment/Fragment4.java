@@ -1,25 +1,28 @@
 package com.example.bx.myapplication.fragment;
 
+import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.bx.myapplication.R;
 
 
-public class Fragment4 extends LazyLoadFragment {
+public class Fragment4 extends BaseFragment {
+
 
     @Override
-    public int setContentView() {
+    protected int setLayoutId() {
         return R.layout.fm_layout4;
     }
 
     @Override
-    protected void lazyLoad() {
-        String message = "Fragment4" + (isInit ? "已经初始并已经显示给用户可以加载数据" : "没有初始化不能加载数据")+">>>>>>>>>>>>>>>>>>>";
-        showToast(message);
-        Log.d(TAG, message);
+    protected void init(View view, Bundle savedInstanceState) {
+
     }
+
     @Override
-    protected void stopLoad() {
-        Log.d(TAG, "Fragment4" + "已经对用户不可见，可以停止加载数据");
+    public void fetchData() {
+        Log.d("ssss","444---------*********/////////");
+
     }
 }
