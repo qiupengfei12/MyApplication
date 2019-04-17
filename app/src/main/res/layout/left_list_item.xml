@@ -3,8 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:background="@color/gray_light"
-    android:orientation="vertical" >
-    
+    android:orientation="horizontal" >
+
+	<TextView
+		android:id="@+id/tv_bg"
+		android:layout_width="2dp"
+		android:layout_height="30dp"
+		android:layout_gravity="center_vertical"
+		android:background="@color/red"
+		android:visibility="gone" />
+
 	<TextView 
 	    android:id="@+id/left_list_item"
 	    android:layout_width="match_parent"
